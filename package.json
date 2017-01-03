@@ -8,6 +8,7 @@
   },
   "author": "Marius Treitz <marius.treitz@gmail.com>",
   "license": "MIT",
+  "repository": "git@github.com:visby/neo4j-express-heroku-sample.git",
   "dependencies": {
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
