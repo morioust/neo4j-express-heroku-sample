@@ -1,0 +1,24 @@
+{
+  "name": "neo4j-express-heroku-sample",
+  "version": "1.0.0",
+  "description": "Sample project to deploy Neo4j+Express on Heroku",
+  "scripts": {
+    "start": "node ./app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marius Treitz <marius.treitz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "neo4j-driver": "^1.0.5",
+    "pug": "^2.0.0-beta6",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

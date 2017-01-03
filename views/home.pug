@@ -1,0 +1,52 @@
+html
+
+  head
+    title Welcome
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css")
+
+  body
+
+    div.row
+      div.three.columns &nbsp;
+      div.six.columns
+
+        h3 Create node
+
+        form(action="/", method="post")
+
+          label(for="nameInput") Node name
+          div.row
+            div.six.columns
+              input.u-full-width(name="name", type="text", placeholder="Node name", autofocus)
+            div.six.columns
+              input.button-primary.u-full-width(type="submit", value="Create Node")
+
+
+
+
+        h3 List of nodes
+
+        if nodes.length == 0
+          p You haven't created any nodes yet.
+
+        if nodes.length > 0
+          table.u-full-width
+            thead
+              tr
+                th Name
+                th UUID
+            tbody
+              each node in nodes
+                tr
+                  td= node.name
+                  td= node.uuid
+
+
+
+        h3 Clear nodes
+
+        form(action="/clear", method="post")
+
+          div.row
+            div.twelve.columns
+              input.button-primary.u-full-width(type="submit", value="Clear all nodes")
